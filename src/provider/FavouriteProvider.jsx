@@ -16,7 +16,7 @@ const FavouriteProvider = ({ children }) => {
   };
 
   const removeFromFavourites = (location) => {
-    const restFavourites = favourites.filter(
+    const restFavourites = favourites?.filter(
       (fav) => fav.location !== location
     );
     setFavourites(restFavourites);
